@@ -3,6 +3,7 @@
 body {
   font-family: "Scada", sans-serif;
   margin: 0;
+  height: 10000px;
 }
 
 header {
@@ -26,6 +27,8 @@ header div:nth-child(2) > span {
 header div:nth-child(2) {
   display: flex;
   flex-direction: column;
+  text-align: right;
+  padding-right: 30px;
 }
 
 header button {
@@ -63,6 +66,174 @@ nav > div a {
   width: fit-content;
 }
 
+.main-slider {
+  background-color: blueviolet;
+}
+
+.main-slider > div:first-of-type {
+  width: 45%;
+}
+
+.main-slider > div:first-of-type p {
+  margin: 0;
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+.our-production {
+  padding-bottom: 50px;
+}
+
+.our-production p {
+  text-align: center;
+  font-size: 40px;
+  padding: 30px 0;
+}
+
+.our-production-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  grid-gap: 15px;
+  text-align: center;
+  width: 70%;
+}
+
+.our-production-grid span {
+  font-size: 18px;
+}
+
+.our-production-grid img {
+  width: 90%;
+}
+
+.reasons {
+  background-image: url(./imgs/2nd_img.png);
+  height: 1015px;
+}
+
+.reasons img {
+  height: 70px;
+  width: 70px;
+}
+
+.reasons > p {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-size: 40px;
+}
+
+.reasons-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+}
+
+.flexed {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  height: fit-content;
+  padding: 0 0 50px 0;
+}
+
+.flexed > div {
+  margin-left: 20px;
+}
+
+.flexed > div span {
+  font-size: 22px;
+  color: white;
+}
+
+.flexed > div p {
+  font-size: 17px;
+}
+
+.dreaming {
+  height: 325px;
+}
+
+.dreaming > span {
+  display: table;
+  margin: auto;
+  font-size: 35px;
+}
+
+.dreaming > p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.dreaming > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 760px;
+  margin: auto;
+  align-items: center;
+}
+
+.dreaming > div p {
+  width: 175px;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.iskander-is {
+  background-image: url(./imgs/iskander-is.png);
+  height: 1040px;
+  background-position: center;
+}
+
+.iskander-is > p {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 125px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+
+.iskander-is-flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 45%;
+}
+
+.iskander-is-flex-container > div {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 25px;
+}
+
+.iskander-is-flex-container > div span {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.iskander-is-flex-container > div p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.iskander-is-flex-container img {
+  width: 90px;
+  height: 90px;
+  padding-right: 25px;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   header {
     grid-template-columns: 2fr 1fr 0.5fr;
@@ -75,6 +246,11 @@ nav > div a {
 
   header div:nth-child(1) > p {
     font-size: 10px;
+  }
+
+  header div:nth-child(2) {
+    text-align: center;
+    padding: 0;
   }
 
   header div:nth-child(2) > span {
@@ -105,6 +281,117 @@ nav > div a {
     font-size: 12px;
     width: 80%;
   }
+
+  .our-production p {
+    font-size: 20px;
+    padding: 30px 0;
+  }
+
+  .our-production-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    grid-gap: 15px;
+    text-align: center;
+  }
+
+  .our-production-grid span {
+    font-size: 15px;
+  }
+
+  .reasons {
+    height: 975px;
+  }
+
+  .reasons img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .reasons > p {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+
+  .reasons-flex {
+    flex-direction: row;
+    width: 100%;
+    padding: 0 15px 15px 50px;
+    box-sizing: border-box;
+  }
+
+  .flexed {
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    padding: 0px 0 0px 0;
+  }
+
+  .flexed > div {
+    margin-left: 20px;
+  }
+
+  .flexed > div span {
+    font-size: 18px;
+    color: white;
+  }
+
+  .flexed > div p {
+    font-size: 14px;
+  }
+
+  .iskander-is > p {
+    font-size: 25px;
+  }
+
+  .dreaming {
+    height: 470px;
+  }
+
+  .dreaming span {
+    font-size: 30px;
+  }
+
+  .dreaming p {
+    font-size: 25px;
+  }
+
+  .dreaming > div p {
+    font-size: 16px;
+    width: 130px;
+  }
+
+  .iskander-is-flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 45%;
+  }
+
+  .iskander-is-flex-container > div {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+  }
+
+  .iskander-is-flex-container > div span {
+    font-size: 17px;
+  }
+
+  .iskander-is-flex-container > div p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .iskander-is-flex-container img {
+    width: 60px;
+    height: 70px;
+    padding-right: 10px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -127,6 +414,126 @@ nav > div a {
   nav > div {
     font-size: 14px;
     width: 80%;
+  }
+
+  .our-production p {
+    font-size: 30px;
+  }
+
+  .our-production-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    font-size: 15px;
+    margin-bottom: 50px;
+    width: 50%;
+  }
+
+  .our-production-grid img {
+    width: 90%;
+  }
+
+  .reasons img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .reasons > p {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+
+  .reasons-flex {
+    width: 90%;
+  }
+
+  .flexed {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    height: fit-content;
+    padding: 0 0 20px 0;
+  }
+
+  .flexed > div {
+    margin-left: 20px;
+  }
+
+  .flexed > div span {
+    font-size: 20px;
+    color: white;
+  }
+
+  .flexed > div p {
+    font-size: 15px;
+  }
+
+  .dreaming > span {
+    display: table;
+    margin: auto;
+    font-size: 35px;
+  }
+
+  .dreaming > p {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .dreaming > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 760px;
+    margin: auto;
+    align-items: center;
+  }
+
+  .dreaming > div p {
+    width: 175px;
+    text-align: center;
+    margin: 20px 20px;
+  }
+
+  .iskander-is {
+    background-image: url(./imgs/iskander-is.png);
+    height: 1040px;
+    background-position: center;
+  }
+
+  .iskander-is > p {
+    font-size: 30px;
+  }
+
+  .iskander-is-flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 45%;
+  }
+
+  .iskander-is-flex-container > div {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+  }
+
+  .iskander-is-flex-container > div span {
+    font-size: 20px;
+  }
+
+  .iskander-is-flex-container > div p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .iskander-is-flex-container img {
+    width: 70px;
+    height: 70px;
+    padding-right: 25px;
   }
 }
 
@@ -181,11 +588,144 @@ nav > div a {
     width: 60%;
     height: 100%;
     margin: auto;
+    font-size: 16px;
   }
 
   nav > div a {
     text-decoration: none;
     color: white;
     width: fit-content;
+  }
+
+  .our-production p {
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 0;
+  }
+
+  .our-production-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    grid-gap: 15px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .reasons img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .reasons > p {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 40px;
+  }
+
+  .reasons-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  .flexed {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    height: fit-content;
+    padding: 0 0 50px 0;
+  }
+
+  .flexed > div {
+    margin-left: 20px;
+  }
+
+  .flexed > div span {
+    font-size: 22px;
+    color: white;
+  }
+
+  .flexed > div p {
+    font-size: 17px;
+  }
+
+  .dreaming > span {
+    display: table;
+    margin: auto;
+    font-size: 35px;
+  }
+
+  .dreaming > p {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .dreaming > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    max-width: 760px;
+    margin: auto;
+    align-items: center;
+  }
+
+  .dreaming > div p {
+    width: 175px;
+    text-align: center;
+    margin: 20px 20px;
+  }
+
+  .iskander-is {
+    background-image: url(./imgs/iskander-is.png);
+    height: 1040px;
+    background-position: center;
+  }
+
+  .iskander-is > p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 125px;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+
+  .iskander-is-flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 45%;
+  }
+
+  .iskander-is-flex-container > div {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 25px;
+  }
+
+  .iskander-is-flex-container > div span {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .iskander-is-flex-container > div p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .iskander-is-flex-container img {
+    width: 90px;
+    height: 90px;
+    padding-right: 25px;
   }
 }
