@@ -364,18 +364,31 @@ nav > div a {
     width: 130px;
   }
 
+  .iskander-is {
+    height: 1030px;
+  }
+
+  .iskander-is > p {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
   .iskander-is-flex-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: auto;
-    width: 45%;
+    width: 75%;
   }
 
   .iskander-is-flex-container > div {
     display: flex;
     flex-direction: row;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
+  }
+
+  .iskander-is-flex-container > div:last-of-type {
+    padding-bottom: 0;
   }
 
   .iskander-is-flex-container > div span {
@@ -389,7 +402,7 @@ nav > div a {
 
   .iskander-is-flex-container img {
     width: 60px;
-    height: 70px;
+    height: 60px;
     padding-right: 10px;
   }
 }
