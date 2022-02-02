@@ -268,6 +268,94 @@ nav > div a {
   margin: 10px 10px;
 }
 
+hr {
+  height: 2px;
+  background-color: gray;
+  border: none;
+}
+
+.partners {
+  width: 75%;
+  margin: auto;
+}
+
+.partners p {
+  text-align: center;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-size: 400;
+}
+
+.partners > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.partners > div img {
+  padding: 30px 30px;
+}
+
+.reviews {
+  background: url(./imgs/bkgrnd.png);
+  height: 1000px;
+}
+
+.reviews > span {
+  display: table;
+  margin: auto;
+  padding-top: 100px;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.reviews > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 36px;
+  width: 59%;
+  margin: auto;
+  justify-items: center;
+}
+
+.review-block {
+  max-width: 360px;
+  background-color: rgba(50, 49, 49, 0.9);
+  border-radius: 12px;
+  margin: 50px 0 0 0;
+}
+
+.review-block > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review-block > div img {
+  padding: 30px 0 0 15px;
+  height: 100px;
+  width: 100px;
+}
+
+.review-block > div p {
+  width: 120px;
+  margin: 30px 20px 0 25px;
+  font-size: 22px;
+  color: white;
+}
+
+.review-block > p {
+  padding: 10px;
+  margin: 0 0 0 5px;
+  font-size: 16px;
+  color: white;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   header {
     grid-template-columns: 2fr 1fr 0.5fr;
@@ -509,6 +597,67 @@ hr {
   padding: 30px 0px;
 }
 
+.reviews > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.reviews > span {
+  display: table;
+  margin: auto;
+  padding-top: 60px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.reviews > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 36px;
+  width: 50%;
+  margin: auto;
+  justify-items: center;
+}
+
+.review-block {
+  max-width: 320px;
+  max-height: fit-content;
+  background-color: rgba(50, 49, 49, 0.9);
+  border-radius: 12px;
+  margin: 50px 0 0 0;
+}
+
+.review-block > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review-block > div img {
+  padding: 15px 0 0 0px;
+  height: 60px;
+  width: 60px;
+}
+
+.review-block > div p {
+  width: 120px;
+  margin: 30px 20px 0 25px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.review-block > p {
+  padding: 6px;
+  margin: 0 0 0 5px;
+  font-size: 10px;
+  color: white;
+}
+
 @media (min-width: 768px) {
   header img {
     width: 200px;
@@ -690,6 +839,66 @@ hr {
 
   .partners p {
     font-size: 35px;
+  }
+
+  .reviews {
+    background: url(./imgs/bkgrnd.png);
+    height: 1000px;
+  }
+
+  .reviews > span {
+    display: table;
+    margin: auto;
+    padding-top: 55px;
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  .reviews > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 36px;
+    width: 59%;
+    margin: auto;
+    justify-items: center;
+  }
+
+  .review-block {
+    max-width: 360px;
+    max-height: fit-content;
+    background-color: rgba(50, 49, 49, 0.9);
+    border-radius: 12px;
+    margin: 50px 0 0 0;
+  }
+
+  .review-block > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .review-block > div img {
+    padding: 30px 0 0 15px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .review-block > div p {
+    width: 120px;
+    margin: 30px 20px 0 25px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: auto;
+  }
+
+  .review-block > p {
+    padding: 8px;
+    margin: 0 0 0 5px;
+    font-size: 12px;
+    color: white;
   }
 
   @media (min-width: 1024px) {
@@ -902,6 +1111,7 @@ hr {
       color: black;
       text-transform: uppercase;
       padding: 0 15px;
+      font-size: 16px;
     }
 
     .img-flex {
@@ -939,6 +1149,63 @@ hr {
 
     .partners > div img {
       padding: 30px 30px;
+    }
+
+    .reviews {
+      background: url(./imgs/bkgrnd.png);
+      height: 1000px;
+    }
+
+    .reviews > span {
+      display: table;
+      margin: auto;
+      padding-top: 100px;
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    .reviews > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 36px;
+      width: 59%;
+      margin: auto;
+      justify-items: center;
+    }
+
+    .review-block {
+      max-width: 360px;
+      background-color: rgba(50, 49, 49, 0.9);
+      border-radius: 12px;
+      margin: 50px 0 0 0;
+    }
+
+    .review-block > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .review-block > div img {
+      padding: 30px 0 0 15px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .review-block > div p {
+      width: 120px;
+      margin: 30px 20px 0 25px;
+      font-size: 22px;
+      color: white;
+    }
+
+    .review-block > p {
+      padding: 10px;
+      margin: 0 0 0 5px;
+      font-size: 16px;
+      color: white;
     }
   }
 }
